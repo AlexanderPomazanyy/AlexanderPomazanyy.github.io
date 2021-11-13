@@ -874,7 +874,6 @@ body * {
     .partition__interior,
     .fantasies::before,
     .clients,
-    .section__background,
     .questions::before,
     .d_n,
     .footer {
@@ -1072,11 +1071,18 @@ body * {
         width: 500px;
     }
 
+    .section__background {
+        z-index: -1;
+        margin-top: -150px;
+        background-image: none;
+        background: #181818;
+        opacity: 1;
+    }
     /*--QESTIONS--*/
 
     .questions {
         background: none;
-        z-index: -1;
+        /* z-index: -1; */
     }
     .questions__container {
         margin-top: -150px;
@@ -1085,7 +1091,6 @@ body * {
     .questions__iquirer {
         order: 1;
         width: auto;
-        margin-top: 200px;
         position: unset;
     }
     .iquirer__form_items {
